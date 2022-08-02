@@ -3,20 +3,16 @@ class Ship {
   constructor(ob) {
     this.x = ob.x;
     this.y = ob.y;
-    this.r = ob.r;
+    this.r = 40;
     this.ctx = ob.Ctx;
+    this.color = "red";
+    this.r = 40;
   }
 
   draw() {
     this.ctx.clearRect(this.x, this.y, this.r, this.r);
-    this.ctx.fillStyle = "green";
+    this.ctx.fillStyle = this.color;
     this.ctx.fillRect(this.x, this.y, this.r, this.r);
-    this.ctx.strokeStyle = "blue";
-    this.ctx.lineWidth = 5;
-    this.ctx.beginPath();
-    this.ctx.moveTo(this.x + 20, this.y);
-    this.ctx.lineTo(this.x + 20, this.y - 20);
-    this.ctx.stroke();
   }
 
   update(xSpeed) {
