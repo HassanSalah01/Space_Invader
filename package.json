@@ -1,0 +1,17 @@
+{
+  "name": "space_inv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Bullet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --config .prettierrc.json *.js --write",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  
+  }
+}
